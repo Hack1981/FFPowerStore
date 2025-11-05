@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FFPowerStore</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar .logo {
+      font-weight: 700;
+      color: #ff6f00;
+      font-size: 1.6em;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 15px;
+      text-align: left;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      color: #222;
+      font-size: 1.8em;
+      letter-spacing: 0.3px;
+    }
+
+    /* GRADE DE PRODUTOS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: start;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 1em;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #007bff;
+      font-weight: 700;
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    .seller {
+      color: #777;
+      font-size: 0.85em;
+    }
+
+    .btn-comprar {
+      display: block;
+      text-align: center;
+      background-color: #ff6f00;
+      color: #fff;
+      padding: 10px 0;
+      border-radius: 25px;
+      font-weight: 600;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-comprar:hover {
+      background-color: #e55d00;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 1024px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">FFPowerStore</div>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="container">
+    <h2>Ofertas de Free Fire</h2>
+
+    <div class="products">
+
+      <!-- PRODUTO 1 -->
+      <div class="card">
+        <img src="img/pass.png" alt="Passe de Elite Free Fire">
+        <div class="card-content">
+          <h3>PASSE DE ELITE / BOOYAH PREMIUM + BRINDE [ APROVEITE AGORA SEU PRÊMIO INCRÍVEL ]</h3>
+          <div class="price">R$ 6,00</div>
+          <div class="seller">Vendedor: FFPowerStore</div>
+          <a href="produtos/pass-de-elite.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+      </div>
+
+      <!-- PRODUTO 2 -->
+      <div class="card">
+        <img src="img/likes.png" alt="Likes Free Fire">
+        <div class="card-content">
+          <h3>(MEGA PROMOÇÃO) 700 LIKES PARA FREE FIRE LIKE FF/LIKES VIA ID [ 700 LIKES ]</h3>
+          <div class="price">R$ 4,00</div>
+          <div class="seller">Vendedor: FFPowerStore</div>
+          <a href="produtos/likes.html" class="btn-comprar">Comprar Agora</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
